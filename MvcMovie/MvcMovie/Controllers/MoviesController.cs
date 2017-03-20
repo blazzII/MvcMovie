@@ -168,9 +168,9 @@ public async Task<IActionResult> Index(string movieGenre, string searchString)
             return RedirectToAction("Index");
         }
 
-        // POST: Movies/Delete/6
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Delete(int id, bool notUsed)
+        // POST: Movies/Delete/6  This section gives an error.  It didn't before.
+        // [ValidateAntiForgeryToken]
+        // public async Task<IActionResult> Delete(int id, bool notUsed) 
 
         private bool MovieExists(int id)
         {
